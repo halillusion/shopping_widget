@@ -1,0 +1,272 @@
+@charset 'utf-8'; @font-face {
+    font-family: 'Avenir Book';
+    src: url('../fonts/Avenir-Book.woff2') format('woff2'), url('../fonts/Avenir-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Black Oblique';
+    src: url('../fonts/Avenir-BlackOblique.woff2') format('woff2'), url('../fonts/Avenir-BlackOblique.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Black.woff2') format('woff2'), url('../fonts/Avenir-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Book';
+    src: url('../fonts/Avenir-BookOblique.woff2') format('woff2'), url('../fonts/Avenir-BookOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Oblique.woff2') format('woff2'), url('../fonts/Avenir-Oblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Heavy.woff2') format('woff2'), url('../fonts/Avenir-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-LightOblique.woff2') format('woff2'), url('../fonts/Avenir-LightOblique.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-MediumOblique.woff2') format('woff2'), url('../fonts/Avenir-MediumOblique.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Light.woff2') format('woff2'), url('../fonts/Avenir-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-HeavyOblique.woff2') format('woff2'), url('../fonts/Avenir-HeavyOblique.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Medium.woff2') format('woff2'), url('../fonts/Avenir-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Pro Bk';
+    src: url('../fonts/ITCAvantGardePro-Bk.woff2') format('woff2'), url('../fonts/ITCAvantGardePro-Bk.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Pro Bk';
+    src: url('../fonts/ITCAvantGardePro-Demi.woff2') format('woff2'), url('../fonts/ITCAvantGardePro-Demi.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Pro Md';
+    src: url('../fonts/ITCAvantGardePro-Bold.woff2') format('woff2'), url('../fonts/ITCAvantGardePro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Pro Md';
+    src: url('../fonts/ITCAvantGardePro-Md.woff2') format('woff2'), url('../fonts/ITCAvantGardePro-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir-Roman.woff2') format('woff2'), url('../fonts/Avenir-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*
+  Reset
+*/
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+/*
+  Widget Styles
+*/
+body {
+    font-family: 'Avenir', sans-serif;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrap .bg-side {
+    background-image: url("../images/cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh;
+}
+
+.wrap .products-side {
+    width: 50%;
+    height: 100vh;
+}
+
+.wrap .products-side .products-list {
+    display: flex;
+    flex-direction: column;
+    margin: 96px 120px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.wrap .products-side .products-list .products-header {
+    font-family: 'ITC Avant Garde Pro Md', sans-serif;
+    font-weight: 700;
+    color: #000;
+    width: 70%;
+    margin-bottom: 12px;
+    font-size: 31.25px;
+    line-height: 130%;
+}
+
+.wrap .products-side .products-list .products-subheader {
+    font-family: 'Avenir', sans-serif;
+    color: #666666;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    width: 60%;
+    margin-bottom: 32px;
+}
+
+.wrap .products-side .products-list .products-link {
+    font-family: 'Avenir', sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12.8px;
+    line-height: 17px;
+    color: #000;
+    position: relative;
+    display: inline;
+    margin-bottom: 5px;
+}
+
+.wrap .products-side .products-list .products-link:before {
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    height: 1px;
+    background: currentColor;
+    width: 100%;
+    transition: 0.2s ease-out;
+}
+
+.wrap .products-side .products-list .products-link:hover {
+    color: #666666;
+}
+
+.wrap .products-side .products-list .products-link:hover:before {
+    width: 2%;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
