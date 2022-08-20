@@ -203,6 +203,7 @@ body {
 .wrap .products-side {
     width: 50%;
     height: 100vh;
+    overflow: hidden;
 }
 
 .wrap .products-side .products-list {
@@ -267,6 +268,183 @@ body {
 }
 
 .swiper {
-  width: 600px;
-  height: 300px;
+    width: 600px;
+    height: 300px;
+}
+
+.product-slider {
+    width: calc(100% + 20rem);
+    height: 100%;
+    margin-top: 4.25rem;
+    position: relative;
+}
+
+.product-slider .product-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 230px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.product-slider .product-card:hover img {
+    transform: scale(0.9);
+    border-color: black;
+}
+
+.product-slider .product-card img {
+    width: 230px;
+    height: 310px;
+    object-fit: cover;
+    transition: 0.2s ease-out;
+    border: 1px solid transparent;
+}
+
+.product-slider .product-card p {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 160%;
+    color: #000;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.product-slider .product-card .product-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-slider .product-card .product-options .product-price {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.8px;
+    line-height: 160%;
+    color: #000;
+}
+
+.product-slider .product-card .product-options .product-colors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.product-slider .product-card .product-options .product-colors input {
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    border: 1.5px solid #fff;
+    outline: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.product-slider .product-card .product-options .product-colors input:checked {
+    outline: 1px solid #000;
+}
+
+.product-slider .next-slides {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    top: calc(50% - 20px);
+    right: calc(50% + -38px);
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.product-slider .next-slides:hover {
+    background: #fff;
+    border-color: #000;
+}
+
+.product-slider .swiper-wrapper {
+    position: inherit;
+}
+
+
+@media (max-width: 1600px) {
+    .product-slider .product-card img {
+        width: 200px;
+        height: 270px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .product-slider .product-card img {
+        width: 180px;
+        height: 250px;
+    }
+
+    .wrap .products-side .products-list .products-header {
+        width: 90%;
+    }
+
+    .wrap .products-side .products-list .products-subheader {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .wrap .products-side .products-list {
+        margin: 96px 60px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .wrap .bg-side {
+        width: 100%;
+        height: 60vh;
+        position: relative;
+        z-index: 0;
+    }
+
+    .wrap {
+        flex-direction: column;
+    }
+
+    .wrap .products-side {
+        width: 100%;
+        height: 80vh;
+        margin-top: -40vh;
+        position: relative;
+    }
+
+    .wrap .products-side .products-list .products-subheader {
+        display: none;
+    }
+
+    .wrap .products-side .products-list .products-header {
+        color: #fff;
+    }
+
+    .wrap .products-side .products-list .products-link {
+        color: #fff;
+    }
+
+    .wrap .products-side .products-list .products-link:hover {
+        color: #ebebeb;
+    }
+
+    .wrap .bg-side:after {
+        position: absolute;
+        content: '';
+        inset: 0;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.05085784313725494) 20%, rgba(0,0,0,0.39539565826330536) 100%);
+    }
 }

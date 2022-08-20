@@ -2,11 +2,12 @@
 
   const productSlider = new Swiper('.product-slider', {
     loop: true,
-
-    // Navigation arrows
+    slidesPerView: 4,
+    spaceBetween: 32,
+    autoplay: true,
     navigation: {
-      nextEl: '.product-slider .swiper-button-next',
-      prevEl: '.product-slider .swiper-button-prev',
+      nextEl: '.product-slider .next-slides',
+      // prevEl: '.product-slider .prev-slides',
     },
   });
 
