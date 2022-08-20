@@ -11,6 +11,4 @@
     },
   });
 
-  console.log(productSlider);
-
 })();
